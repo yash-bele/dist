@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | iNeuron</title>
+    <!-- === CDN (SWIPER-LINK) === -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- STYLE (SWIPER) -->
+    
+  <link rel="stylesheet" href="/assets/index.fc5b1e83.css">
+</head>
+
+<body>
+    <!-- === NAVBAR === -->
+    <nav class="flex items-center justify-around py-3 sticky top-0 bg-white z-50 shadow-md">
+        <img class="hover:cursor-pointer" src="/assets/bars.4816ff68.svg" width="7%" alt="bars">
+        <img src="/assets/ineuron-logo.c2100016.png" width="40%" alt="ineuron-logo">
+        <img class="hover:cursor-pointer" src="/assets/magnifying-glass.ec77ff44.svg" width="7%" alt="magnifying-glass">
+    </nav>
+
+    <!-- === INTRO === -->
+    <section class="bg-orange-100 text-blue-900 space-y-4 px-3 py-5 flex flex-col items-center">
+        <img src="/assets/team.0c1796e4.png" alt="team">
+        <h1 class="font-bold text-base text-center">Learn from the Best of Industry</h1>
+        <h1 class="font-bold text-2xl text-center">Highest in <span class="text-orange-500">Quality</span>, Affordable
+            in Price</h1>
+        <h1 class="font-semibold text-sm text-center leading-5 pt-1">Digital entrepreneurs, Youtubers and content
+            creators provide affordable courses across technologies.</h1>
+    </section>
+
+    <!-- === HOW MANY === -->
+    <section class="space-y-5 p-10 flex flex-col items-center text-blue-900">
+        <h1 class="font-bold text-2xl text-center pb-5">“Pure <span class="text-orange-500">Hardwork</span>, No
+            Shortcuts!”</h1>
+        <img src="/assets/courses.deb52902.svg" width="50%" alt="courses">
+        <h1 class="text-center pb-5"><span class="text-orange-500 font-bold text-2xl">400+</span> <br> <span
+                class="font-semibold text-base">Different Courses</span></h1>
+        <img src="/assets/enrolled.7f1c1d56.svg" width="50%" alt="enrolled">
+        <h1 class="text-center pb-5"><span class="text-orange-500 font-bold text-2xl">400000+</span> <br> <span
+                class="font-semibold text-base">Students Enrolled</span></h1>
+        <img src="/assets/transition.74997a0a.svg" width="50%" alt="transition">
+        <h1 class="text-center"><span class="text-orange-500 font-bold text-2xl">10000+</span> <br> <span
+                class="font-semibold text-base">Successful Transition</span></h1>
+    </section>
+
+    <!-- === COMPANIES (SLIDER) === -->
+    <section class="mt-10 mb-20">
+        <div class="text-center text-xl font-bold text-blue-900 mb-2">
+            <span class="bg-orange-100 pt-1 pb-1.5 px-16 mb-2 rounded-xl">Our Achievers</span>
+        </div>
+        <div class="swiper mySwiper companies">
+            <div class="swiper-wrapper companies-wrapper">
+                <div class="swiper-slide companies-slide"><img src="/assets/affine.fe372f5a.png" alt="affine"></div>
+                <div class="swiper-slide companies-slide"><img src="/assets/boeing.0469ab1c.png" alt="boeing"></div>
+                <div class="swiper-slide companies-slide"><img src="/assets/dun&bradstreet.c1c06e2c.png"
+                        alt="dun&bradstreet"></div>
+                <div class="swiper-slide companies-slide"><img src="/assets/emids.94e18d7a.png" alt="emids"></div>
+                <div class="swiper-slide companies-slide"><img src="data:image/png;base64,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" alt="learnyst">
+                </div>
+                <div class="swiper-slide companies-slide"><img src="/assets/livspace.f1c2297d.png" alt="livspace">
+                </div>
+                <div class="swiper-slide companies-slide"><img src="/assets/mindtree.2eba887b.png" alt="mindtree">
+                </div>
+                <div class="swiper-slide companies-slide"><img src="/assets/robosoft.0ac0c4cd.png" alt="robosoft">
+                </div>
+                <div class="swiper-slide companies-slide"><img src="/assets/thoughtworks.4a69e567.png"
+                        alt="thoughtworks"></div>
+                <div class="swiper-slide companies-slide"><img src="/assets/wellnesys.25ee8e45.png" alt="wellnesys">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === HACKATHON TIEUPS === -->
+    <section class="mt-16 mb-10">
+        <div class="text-center text-xl font-bold text-blue-900 mb-2">
+            <span class="bg-orange-100 pt-1 pb-1.5 px-12 mb-2 rounded-xl">Hackathon Tieups</span>
+        </div>
+        <div class="swiper mySwiper companies">
+            <div class="swiper-wrapper companies-wrapper">
+                <div class="swiper-slide companies-slide"><img src="/assets/github.fb42b8bd.png" alt="affine"></div>
+                <div class="swiper-slide companies-slide"><img src="/assets/redis.7fb637d2.png" alt="boeing"></div>
+                <div class="swiper-slide companies-slide"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAABGCAYAAAB2Zan9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAyGSURBVHgB7Z3dbtvYEcfnUM5Gm+12/QZlrooCC0R+gqXRTZy0m5gusKmci1p5gjhPEPsJ4jyBFRSNnS3Q0M4Wie0UVp7ADrAX7dVq38AtkKy9tjidcyhbJPXNcyiRyvwAQZbML1Hi/8zMmRkCMAzDMAzDMAzDMAzDMAzDMAzDMAzzcSEgY7gv3Gn4VbEEwrqGvl8CQHqIafqXHVu0HjzwCIU49M/g7dTx8aG34B0BwzATSSYES4nU51eWEH2XDqkEiNOQnJqwRBVO8a13a7MODMNMDGMVLHev7CDCEgjhaopUN6qiAassXAwzGYxFsNxXZRunYB0QHBgNLFwMMwGMVLCU63eluIwCHsEYQBKt7VubK8AwTC4ZmWApq6qAL1SMarzUydqaZWuLYfKHBSOAxKqCU+IgA2IlkcJ54L5ZXAKGYXJF6oLl7pRXsCDjVakE1RMiptHH6p1X5RVgGCY3FCBFlFiNKV41CMIC57f3vhT/+dsPNWAYJvOkJlhZF6tzWLQYJj+kEnR3Xy8uo4WPIUcIFBVvbuMpMAyTWYwLVpBjRQH2TMWsBgGPREPM8Owhw2QX40F3CrDv50+sJBSIV2kXDMNkFaOCJeNW0F6knCNE6c5OOfNxN4b5WDHmEgaJofAj5B52DRkmqxizsEisJsQyka4hrAPDMJnDiIU1OdZVi0YDZr+/tVkDhmEywxQYQM+6Ekcg8LC1MdmsD9tLeATUYFhQlgIlmwCwLJynpxowDJMZtC0sA9ZVbevG5uzF9oIeWfvxhWiZoY91fq+8n7yFDcWy3p9c5Q6mzCShOqYUi2oQz2OcVt/CKoysp9WIEdP+Z5dlgfQTSJH53XJY7Oth8dahOZDsJ1iVDFP0tq8/fwgJcXe/LSEUDs5fm3Cvm4OP3XspPJIWu7AsD079rWEvyOZguX6+LZp8Wei3jfh57nfuVCOAiEcy2H5C+5Lr2oHnIKYFipV+Cc9yPd/CB3ReKhhKOaLfnnwaukPvYN9Fd+g3fhUSoi1YKGCJDn4iESBcSFmwIN00EBsSIJRbnhwSqwfh14XgIquBDsEFYvdeKDDC0fcdGkjX7uwsrm3PbQwrvPb5tmReHlkkswNY2fbFEfQ5dyQKVbrgl1qWv9yPEsm+A1VTGO3z9Wgb9b5iJatO6PwLhGnAjheqgz7K81V33yyueF8PUO0x0HeRDlqC5e5XpvH02IER8M2rsgNDo+JhkBwsSROa3cLBUVYAQCX2tiO/v1FPYgiBy2RFlJJbraKEnxVlidl9MIg4g/tYkO2WLqwdx319d9m7+d1at3VUbW5EJMiS9LHn53J37rpk8T0e8BKwVQeTnbK9Pbe5ChlFz8I6Ox5Zf6tCEvcGdU0/MX1WLMrPWIPcQ5MbymXqD7kNiQW62wSMESsrSr39LTVAxS2cvmLQhwqt/05j/Tak63X79d1Vy7Iu6m3REo9I7L1ObpkaBGKNBMiKXNm69bzeaz8orFg9r/oNeLStukB1s5cSGWo2DAut30UE7djrOhhGS7B8gK8yd58ww1gFvAYTIVh4aCo+1o3AupJudGfXQ/7fVKC3WxwkiPMIulDRPX8PLUvO+CYWHFr/MVmIhyYtxJckgPO7i1+1jvOiNGymbf9tg7Xwtm9u9gxVBHHEkICQ+ygtsvj5v00xNcsiMZTCRcsMYl1tXe/8O2rGY+2L5TRiVd3QShwViFnoIJoqIhtdUvOBmoAJWzgiYqn5FqTe5VVekOLS5fuxfTtqdkyDgoxnkRiCQdRxYtgKkaVhixGrqK3cTQpPA/vH5awpO7ozqHUaLF5STE18Upwhq3pN+JDqgGYCvUx3oReczQcsWINCI3rEbSGxj1wAMqakKxyD4M1W29xf69dXvgAtAgvI5PHL4xRWND4mz9F5vLajKwg0K5jISg3isd2OY3vu+cM8pDnoCZbG1GZ+yGPnidHj7pYrEI1hVL0bzw7lc+stMe1fKT6AlAksoehg+o/fP/sJhqcat4CaQXhjeNc3ayhExF2leN96l7SU6vagPdsKl2vRN9SxH7hv7j2Q7iLkFN20BhtGxOgTRy+wYTJwYjlfHRGWteZ9/WzoVI64deWDqKrtCXhKcx+Vi+0HVtaTtGZeW3dngrBg1SABMjhtCZrRiyYyV+68Kv9k8nZx1tTlVfzl2A0FwO1oCgM0Y1Aw8OydtJro+65CdMaWZgL9Nem7z+8tHlHkvhbkrOXnLulGSnOY3GD3W8BHf2iLsplwaYfeqr28sfFW/iEtCBo4aqG8o2n4/FMZBB/MUugCXYydZo3tINAcHdsQA/FMgjx+mtF7GJ7REzTjSW5bzVQQXoqLu3tvAcE/CL1th5eRruDWrY06DIG4VHyIpyeljqVuKoFUuOhT0L8AQCKci3t2juQ2X8xkE7eu4gJB8hGxDOgiqYA+ToeHHV+IhHRlW7P1tZzRa3fbzAbhpfvs+37HYLoMiCf5DFIIt25szJCVuxJ1bduRIiwt8FHEGHVgC+ujIVZk3gU8g6FiPcoFi7vdFtp39lqNEH1oK1odQSKpOJK5Sts3nxupVNi+vvFwfnfRaVkrqg3RvoDGgql7uahUh73yfCSMQUJjfTjRSuQkK1Guv3p77968hb4bTCR1nOG3/Sufyu8tcVlW2ugKVh1GFOMh9R8+C9RMyVAdJgI87JY/o7XVDomigqyafusZSCStBzuTSYzxDh94JE4bs1t//HtfgR4G0cAFtCi2FI41QcFoEB5lbR+0BAsL5Aoaive9vP5si57kQxVBN4pF9yIHq4kQfoX+t5rV6g7dtIZMfijD1IHpSNMlqkAynGTlVgEyKVE9SITFpcuzsdm8abxUeGHavVE5XsJaiL3tQEaR3083t1UKkszB2prbvErXcUjYSfw/uWRDRtFMa0CjI1gm0ShTmXR0u8ySlWUkkVTlM6mkx8gAaptOQVD76hFryhpytlS6rd/s3HV7L+jXwy8bl6Y0c9bSQy/THayJFywU3MSvE82R2wm/5wvLtaaE0+sR20zFlBWkrB9sK1KWdYDLYJhOQfis4e4urjWTnu2CsF5QSGW9k7VFs5MlCLqSXFB4//M7yCh6MSzhv5vU1jLn4GhF2R4kV0qSoE7LGXTbEDRV7N2hoNA2K1dtxkh6Mr/7Zy98gTQTSbWCyud4cxueu1dewVAMTRUV//Pbmmc4nqWC8HvlkoE8P+MENZ0YT9CVfbgq9BuoQSv+RxMmvhNbrpbl7iR6gjVVPITTkyOj2eC0TQtPHDCA34A10Kx3HMNoY0N62KaW65Yo2g8hxBMSFLf12mwiqZwRIyFxwnlfzXjWjOkLUbWJiQbhzYNow5BIa5MspxkSoxcdjs1pbTu+pjiiiYXeA9WY0RIslU27Vz40OcoEdWDwFgxAx6b7A830aDMuZBlOtDdTK1G0H50SSU1aWWqLU8UF/OX4IDKbl0Jfq6YwLJA1s5+1Ei4ZayNLa7YZZ6z0X4PECsSsN2Ry6qjRzsMSaHkIbWblRKCTIT0EdUiPOiShz0RDs8tsvbX4cOdJJpKGBY+sLGlxrfZZqT5o+KGVOY7rkSZ5O4tLPTt0YoM+d6Heem31HaykMDR7WykXDHUnadQ+/aGOoeuxBeU290m4VgPh6ph/VSeLt2p9+Fnfyh3iO0q+C02CrqMnP2qMMLW0+jTp1hKKBlzlG6oyk8af/nXvN/LZ/9+H/+bNg9AWLImcgYDE+TjqxgHpBLaF6qqYVEirfQPPDMOMFCOlOfGK/CHXloLiQBpotEgm68pYTIVhGDMYKX6WgVSYrHylKruCDJM9jHVrkFO8sUzj3MLWFcNkE2OCFdRZYaazfwdBJh2ydcUw2cRsP6yp4pPUAuijYMC7hjAMMx6MCpYqQm3gQj5dQ3GUh7uGMMzHjPGOo8o1HOQ2RBmjcda4z64gw2SbVFoke/JeZ6J/E7esIONW3//hOw8Yhsk0Znq7duDff/3h7e/+8qX804EME/T85rgVw+SB1ARLknXRYrFimHxhpDSnH7dflStWQTzOTkU7BdgRlj3Nu6kwDDNaRiJYEtVULO3eQYOAeCh8scABdobJHyMTrHPcvfIjxHEE5MVRcH83dgEZJq+MXLAkwe3EB20sZoSaaACnLTBMzhmLYJ2TrnBJi8qvorC8QbthMgyTbcYqWOdI4WrQTKI1pTpZOpAYmWGPhwiWZ73/8JTbGzPMZJEJwQojb/skvvj0WuNMlASgA4JmFlEF6u3YovWQQNEDD+UNI1ikGIZhGIZhGIZhGIZhGIZhGIZhGIZhGGZS+D8MH4J/YDt/EgAAAABJRU5ErkJggg=="
+                        alt="dun&bradstreet"></div>
+                <div class="swiper-slide companies-slide"><img src="/assets/geekyants.ec82dbd3.png" alt="emids"></div>
+                <div class="swiper-slide companies-slide"><img src="/assets/nvidia.45977117.png" alt="learnyst">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === HALL OF FAME (SLIDER) === -->
+    <section class=" text-blue-900 mt-20 mb-10">
+        <div class="text-center text-xl font-bold mb-1.5">
+            <span class="bg-orange-100 pt-1 pb-1.5 px-16 rounded-xl">Hall of Fame</span>
+        </div>
+        <div class="swiper mySwiper fame rounded-xl">
+            <div class="swiper-wrapper fame-wrapper">
+                <div class="swiper-slide fame-slide flex flex-col">
+                    <img src="/assets/1.c5f9bafc.png" alt="1">
+                    <h1 class="text-xl font-semibold">Eren Jaeger</h1>
+                    <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
+                        mollitia dolores.</p>
+                </div>
+                <div class="swiper-slide fame-slide flex flex-col">
+                    <img src="/assets/2.e6e7edf1.png" alt="2">
+                    <h1 class="text-xl font-semibold">Violet Evergarden</h1>
+                    <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
+                        mollitia dolores.</p>
+                </div>
+                <div class="swiper-slide fame-slide flex flex-col">
+                    <img src="/assets/3.3233e23b.png" alt="3">
+                    <h1 class="text-xl font-semibold">Naruto Uzumaki</h1>
+                    <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
+                        mollitia dolores.</p>
+                </div>
+                <div class="swiper-slide fame-slide flex flex-col">
+                    <img src="/assets/4.437e54c5.png" alt="4">
+                    <h1 class="text-xl font-semibold">Nobara Kugisaki</h1>
+                    <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
+                        mollitia dolores.</p>
+                </div>
+                <div class="swiper-slide fame-slide flex flex-col">
+                    <img src="/assets/5.ed3be787.png" alt="5">
+                    <h1 class="text-xl font-semibold">Monkey D. Luffy</h1>
+                    <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
+                        mollitia dolores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === LIVE PROGRAMS (SLIDER) === -->
+    <section class=" text-blue-900 mt-20 mb-10">
+        <div class="text-center text-xl font-bold mb-2">
+            <span class="bg-orange-100 pt-1 pb-1.5 px-16 rounded-xl">Live Programs</span>
+        </div>
+        <div class="swiper mySwiper programs rounded-xl">
+            <div class="swiper-wrapper programs-wrapper">
+                <div class="swiper-slide programs-slide flex flex-col">
+                    <img class="rounded-xl" src="/assets/1.6e14db8e.jpg" alt="1">
+                    <h1 class="text-xl font-semibold">Facebook Marketing</h1>
+                    <h1 class="text-lg font-semibold"><span class="text-orange-500">by</span> Amresh Bharti</h1>
+                    <p class="text-lg font-semibold text-orange-500">₹3000.00</p>
+                </div>
+                <div class="swiper-slide programs-slide flex flex-col">
+                    <img class="rounded-xl" src="/assets/2.2bdb4f62.jpg" alt="2">
+                    <h1 class="text-xl font-semibold">Digital Marketing</h1>
+                    <h1 class="text-lg font-semibold"><span class="text-orange-500">by</span> Amresh Bharti</h1>
+                    <p class="text-lg font-semibold text-orange-500">₹11000.00</p>
+                </div>
+                <div class="swiper-slide programs-slide flex flex-col">
+                    <img class="rounded-xl" src="/assets/3.c632a349.jpg" alt="3">
+                    <h1 class="text-xl font-semibold">DSA for FAANG</h1>
+                    <h1 class="text-lg font-semibold"><span class="text-orange-500">by</span> Anurag Tiwari</h1>
+                    <p class="text-lg font-semibold text-orange-500">₹4000.00</p>
+                </div>
+                <div class="swiper-slide programs-slide flex flex-col">
+                    <img class="rounded-xl" src="/assets/4.a8653051.jpg" alt="4">
+                    <h1 class="text-xl font-semibold">Big Data Bootcamp</h1>
+                    <h1 class="text-lg font-semibold"><span class="text-orange-500">by</span> Shashank Mishra</h1>
+                    <p class="text-lg font-semibold text-orange-500">₹17700.00</p>
+                </div>
+                <div class="swiper-slide programs-slide flex flex-col">
+                    <img class="rounded-xl" src="/assets/5.8fe421dd.jpg" alt="5">
+                    <h1 class="text-xl font-semibold">Web Development</h1>
+                    <h1 class="text-lg font-semibold"><span class="text-orange-500">by</span> Navin Reddy</h1>
+                    <p class="text-lg font-semibold text-orange-500">₹4000.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT YOU WILL LEARN (DROPDOWN) -->
+    <section class=" text-blue-900 mt-16 mb-56 text-center flex flex-col items-center group relative w-fit mx-auto">
+        <div class="text-center text-base font-semibold">
+            <span
+                class="bg-orange-100 border-2 pt-1 pb-1.5 px-5 rounded-xl inline-flex items-center hover:cursor-pointer">What
+                You Will Learn <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </span>
+        </div>
+        <div
+            class="absolute hidden group-hover:block top-8 z-50 w-44 bg-white rounded divide-y divide-gray-100 shadow-md dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+                <li>
+                    <a href="#"
+                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Affordable
+                        Programs</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Community
+                        Programs</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Live
+                        Programs</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">One
+                        Neuron</a>
+                </li>
+            </ul>
+            <div class="py-1">
+                <a href="#"
+                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Test
+                    Series</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FOOTER SECTION === -->
+    <section class="m-2 sm:m-5 p-7 sm:p-14 bg-orange-100 border-2 rounded-lg border-gray-300 -mt-36">
+        <div class="flex flex-col items-center space-y-5">
+            <div class="w-20 sm:w-12">
+                <img src="/assets/ineuron-logo.c2100016.png">
+            </div>
+            <div class='flex justify-center w-10 sm:w-12'>
+                <img class="hover:cursor-pointer mx-2" src="/assets/facebook.c9d0305d.svg" alt="">
+                <img class="hover:cursor-pointer mx-2" src="/assets/twitter.77267469.svg" alt="">
+                <img class="hover:cursor-pointer mx-2" src="/assets/linkedin.20274ca1.svg" alt="">
+                <img class="hover:cursor-pointer mx-2" src="/assets/youtube.9010ce63.svg" alt="">
+            </div>
+        </div>
+
+        <div class="my-8 border-b border-[#C4C4C4]"></div>
+
+        <div class="flex flex-col space-y-5">
+            <div>
+                <img class="pb-2 w-6 hover:cursor-pointer mx-auto" src="/assets/location.9c83dee2.svg" alt="">
+                <p class="font-semibold text-xs text-gray-500">17th Floor Tower A, Brigade Signature Towers,
+                    Sannatammanahalli, Bengaluru, Karnataka 562129.</p>
+            </div>
+            <div>
+                <img class="pb-2 w-6 hover:cursor-pointer mx-auto" src="/assets/message.fc7b759b.svg" alt="">
+                <p class="font-semibold text-xs text-gray-500">Email Us: contact@ineuron.ai</p>
+            </div>
+        </div>
+
+        <div class="mt-8 border-b border-[#C4C4C4]"></div>
+
+        <div class="my-5 space-y-7">
+            <div>
+                <h3 class='py-1 sm:py-2 text-lg sm:text-xl font-semibold text-blue-900'>Company</h3>
+                <div class="flex items-center space-x-5">
+                    <div>
+                        <p
+                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                            About Us</p>
+                        <p
+                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                            Hackathon</p>
+                        <p
+                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                            Job Guarantee</p>
+                        <p
+                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                            Privacy Policy</p>
+                    </div>
+                    <div>
+                        <p
+                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                            Contact Us</p>
+                        <p
+                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                            FAQs</p>
+                        <p
+                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                            Job Assistance</p>
+                        <p
+                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                            Terms & Conditions</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class='py-1 sm:py-2 text-lg sm:text-xl font-semibold text-blue-900'>Company</h3>
+                <div>
+                    <p
+                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                        Job Portal</p>
+                    <p
+                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                        Internship Portal</p>
+                    <p
+                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                        Become an Affiliate</p>
+                    <p
+                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                        Hackathon</p>
+                    <p
+                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                        Job Guarantee</p>
+                    <p
+                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
+                        Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-8 border-b border-[#C4C4C4]"></div>
+
+        <p class='py-1 text-xs sm:text-base font-semibold text-gray-500'>© 2022 Hackathon Challange.
+            This is a sample project
+            and open source design project free for personal and commercial use.</p>
+    </section>
+
+    <!-- === CDN (TAILWIND-SCRIPT) === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- === CDN (SWIPER-SCRIPT) === -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- SCRIPT (FOR SWIPER) -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            grabCursor: true,
+            // spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
+</body>
+
+</html>
