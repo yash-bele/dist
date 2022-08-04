@@ -6,50 +6,227 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page | iNeuron</title>
+    <link rel="icon" type="image/x-icon" href="/assets/fav.42a6bf54.png">
+    <!-- === FONT AWESOME ICONS === -->
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
     <!-- === CDN (SWIPER-LINK) === -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- STYLE (SWIPER) -->
     
-  <link rel="stylesheet" href="/assets/index.fc5b1e83.css">
+  <link rel="stylesheet" href="/assets/index.38ef8ac5.css">
 </head>
 
 <body>
     <!-- === NAVBAR === -->
-    <nav class="flex items-center justify-around py-3 sticky top-0 bg-white z-50 shadow-md">
-        <img class="hover:cursor-pointer" src="/assets/bars.4816ff68.svg" width="7%" alt="bars">
-        <img src="/assets/ineuron-logo.c2100016.png" width="40%" alt="ineuron-logo">
-        <img class="hover:cursor-pointer" src="/assets/magnifying-glass.ec77ff44.svg" width="7%" alt="magnifying-glass">
+    <nav
+        class="flex items-center md:items-start justify-around md:justify-start py-3 shadow-md sticky md:static md:h-[70px] lg:h-32 top-0 bg-white z-50">
+        <img class="md:hidden w-5 sm:w-7 hover:cursor-pointer" src="/assets/bars.4816ff68.svg" alt="bars">
+        <img class="md:hidden w-28 sm:w-32" src="/assets/ineuron-logo.c2100016.png" alt="ineuron-logo">
+        <img class="md:hidden w-6 sm:w-8 hover:cursor-pointer" src="/assets/magnifying-glass.ec77ff44.svg"
+            alt="magnifying-glass">
+
+        <div class="hidden md:flex flex-col items-center w-full mx-20 space-y-6">
+            <div class="flex items-center justify-between w-full">
+                <img class="w-32" src="/assets/ineuron-logo.c2100016.png" alt="ineuron-logo">
+                <label class="relative text-gray-400 focus-within:text-gray-600 block">
+
+                    <img class="absolute w-7 top-[8px] left-3" src="/assets/magnifying-glass.ec77ff44.svg"
+                        alt="magnifying-glass">
+
+                    <input type="email" name="email" id="email" placeholder="What do you want to learn?"
+                        class="md: w-72 lg:w-96 form-input border-2 border-orange-300 rounded-xl py-2 px-4 bg-white placeholder-blue-900 placeholder-opacity-75 font-semibold text-gray-500 appearance-none block pl-14 focus:outline-none">
+                </label>
+                <div class="inline">
+                    <button class="md:text-base md:mr-1 lg:text-lg lg:mr-3 text-blue-900 font-bold">Sign In</button>
+                    <button
+                        class="md:text-base md:mr-1 lg:text-lg lg:ml-1 text-white bg-blue-900 font-semibold pt-1 pb-2 px-5 border-none rounded-md">Sign
+                        Up</button>
+                </div>
+            </div>
+            <!-- Navbar Menu List -->
+            <div class="hidden lg:flex items-center justify-between w-full font-semibold text-blue-900">
+                <!-- Courses Dropdown Section (Starts Here) -->
+                <section class="text-blue-900 text-center flex flex-col items-center group relative w-fit">
+                    <div class="text-center text-base font-semibold">
+                        <span class="inline-flex items-center hover:cursor-pointer">Courses <svg class="ml-2 w-4 h-4"
+                                aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div
+                        class="absolute hidden group-hover:block top-6 z-50 w-44 bg-white rounded divide-y divide-gray-100 shadow-md dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdownDividerButton">
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Data
+                                    Science</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Big
+                                    Data</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Data
+                                    Analytics</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
+                                    Development</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mobile
+                                    Development</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blockchain</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programing</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Cyber
+                                    Security</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Testing</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital
+                                    Marketing</a>
+                            </li>
+                        </ul>
+                        <div class="py-1">
+                            <a href="#"
+                                class="flex py-2 px-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Know
+                                More</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Courses Dropdown Section (Ends Here) -->
+                <span class="hover:cursor-pointer">One Neuron</span>
+                <span class="hover:cursor-pointer">Job Portal</span>
+                <span class="hover:cursor-pointer">Internship Portal</span>
+                <span class="hover:cursor-pointer">Become an Affiliate</span>
+                <span class="hover:cursor-pointer">Hall of Fame</span>
+                <span class="hover:cursor-pointer">Blog</span>
+                <!-- Company Dropdown Section (Starts Here) -->
+                <section class=" text-blue-900 text-center flex flex-col items-center group relative w-fit">
+                    <div class="text-center text-base font-semibold">
+                        <span class="inline-flex items-center hover:cursor-pointer">Company <svg class="ml-2 w-4 h-4"
+                                aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div
+                        class="absolute hidden group-hover:block top-6 z-50 w-44 bg-white rounded divide-y divide-gray-100 shadow-md dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdownDividerButton">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About
+                                    Us</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact
+                                    Us</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hackathon</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Job
+                                    Guarantee</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Job
+                                    Assistance</a>
+                            </li>
+                        </ul>
+                        <div class="py-1">
+                            <a href="#"
+                                class="block py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Privacy
+                                Policy</a>
+                            <a href="#"
+                                class="block py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Terms
+                                & Conditions</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Company Dropdown Section (Ends Here) -->
+            </div>
+        </div>
     </nav>
 
+
     <!-- === INTRO === -->
-    <section class="bg-orange-100 text-blue-900 space-y-4 px-3 py-5 flex flex-col items-center">
+    <section
+        class="bg-orange-100 text-blue-900 space-y-4 md:space-y-5 lg:space-y-5 px-3 py-7 flex flex-col items-center">
         <img src="/assets/team.0c1796e4.png" alt="team">
-        <h1 class="font-bold text-base text-center">Learn from the Best of Industry</h1>
-        <h1 class="font-bold text-2xl text-center">Highest in <span class="text-orange-500">Quality</span>, Affordable
+        <h1 class="font-bold text-base md:text-lg lg:text-xl text-center">Learn from the Best of Industry</h1>
+        <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl text-center">Highest in <span
+                class="text-orange-500">Quality</span>, Affordable
             in Price</h1>
-        <h1 class="font-semibold text-sm text-center leading-5 pt-1">Digital entrepreneurs, Youtubers and content
+        <h1 class="font-semibold text-sm md:text-base lg:text-lg text-center leading-5 pt-1 md:pt-2">Digital
+            entrepreneurs, Youtubers and content
             creators provide affordable courses across technologies.</h1>
     </section>
 
+
     <!-- === HOW MANY === -->
-    <section class="space-y-5 p-10 flex flex-col items-center text-blue-900">
-        <h1 class="font-bold text-2xl text-center pb-5">“Pure <span class="text-orange-500">Hardwork</span>, No
+    <section class="space-y-5 pt-5 pb-7 md:pb-10 text-blue-900">
+        <h1 class="font-bold text-2xl sm:text-3xl lg:text-5xl text-center pb-7 sm:p-7 md:p-10 lg:p-14">“Pure <span
+                class="text-orange-500">Hardwork</span>, No
             Shortcuts!”</h1>
-        <img src="/assets/courses.deb52902.svg" width="50%" alt="courses">
-        <h1 class="text-center pb-5"><span class="text-orange-500 font-bold text-2xl">400+</span> <br> <span
-                class="font-semibold text-base">Different Courses</span></h1>
-        <img src="/assets/enrolled.7f1c1d56.svg" width="50%" alt="enrolled">
-        <h1 class="text-center pb-5"><span class="text-orange-500 font-bold text-2xl">400000+</span> <br> <span
-                class="font-semibold text-base">Students Enrolled</span></h1>
-        <img src="/assets/transition.74997a0a.svg" width="50%" alt="transition">
-        <h1 class="text-center"><span class="text-orange-500 font-bold text-2xl">10000+</span> <br> <span
-                class="font-semibold text-base">Successful Transition</span></h1>
     </section>
+    <div class="text-blue-900 md:flex md:items-center md:justify-around md:w-full pb-5 md:pb-10">
+        <div class="flex flex-col items-center space-y-1 sm:space-y-2 md:space-y-3 my-5">
+            <img class="w-[66.5%] -mb-3 items-center" src="/assets/courses.134859bc.svg" alt="courses">
+            <h1 class="text-orange-500 font-bold text-2xl md:text-3xl text-center">400+</h1>
+            <h1 class="font-semibold text-lg lg:text-2xl text-center">Different Courses</h1>
+        </div>
+        <div class="flex flex-col items-center space-y-1 sm:space-y-2 md:space-y-3 my-10">
+            <img class="w-[49%]" src="/assets/enrolled.7f1c1d56.svg" alt="enrolled">
+            <h1 class="text-orange-500 font-bold text-2xl md:text-3xl text-center">400000+</h1>
+            <h1 class="font-semibold text-lg lg:text-2xl text-center">Students Enrolled</h1>
+        </div>
+        <div class="flex flex-col items-center space-y-1 sm:space-y-2 md:space-y-3 my-10">
+            <img class="w-[55%]" src="/assets/transition.74997a0a.svg" alt="transition">
+            <h1 class="text-orange-500 font-bold text-2xl md:text-3xl text-center">10000+</h1>
+            <h1 class="font-semibold text-lg lg:text-2xl text-center">Successful Transition</h1>
+        </div>
+    </div>
+
 
     <!-- === COMPANIES (SLIDER) === -->
-    <section class="mt-10 mb-20">
-        <div class="text-center text-xl font-bold text-blue-900 mb-2">
-            <span class="bg-orange-100 pt-1 pb-1.5 px-16 mb-2 rounded-xl">Our Achievers</span>
+    <section class="mt-10 mb-20 md:mb-28 mx-1 md:mx-5 lg:mx-10">
+        <div
+            class="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-2 sm:mb-3 md:mb-5">
+            <h1 class="bg-orange-100 w-full pt-1 pb-1.5 rounded-lg font-serif"><span class="text-orange-500">“</span>OUR
+                ACHIEVERS<span class="text-orange-500">”</span></h1>
         </div>
         <div class="swiper mySwiper companies">
             <div class="swiper-wrapper companies-wrapper">
@@ -74,10 +251,13 @@
         </div>
     </section>
 
+
     <!-- === HACKATHON TIEUPS === -->
-    <section class="mt-16 mb-10">
-        <div class="text-center text-xl font-bold text-blue-900 mb-2">
-            <span class="bg-orange-100 pt-1 pb-1.5 px-12 mb-2 rounded-xl">Hackathon Tieups</span>
+    <section class="mt-16 mb-10 md:mb-28 mx-1 md:mx-5 lg:mx-10">
+        <div
+            class="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-2 sm:mb-3 md:mb-5">
+            <h1 class="bg-orange-100 w-full pt-1 pb-1.5 rounded-lg font-serif"><span
+                    class="text-orange-500">“</span>HACKATHON TIEUPS<span class="text-orange-500">”</span></h1>
         </div>
         <div class="swiper mySwiper companies">
             <div class="swiper-wrapper companies-wrapper">
@@ -92,10 +272,12 @@
         </div>
     </section>
 
+
     <!-- === HALL OF FAME (SLIDER) === -->
-    <section class=" text-blue-900 mt-20 mb-10">
-        <div class="text-center text-xl font-bold mb-1.5">
-            <span class="bg-orange-100 pt-1 pb-1.5 px-16 rounded-xl">Hall of Fame</span>
+    <section class=" text-blue-900 mx-1 md:mx-5 lg:mx-10 mt-20 mb-10 md:mb-28">
+        <div class="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+            <h1 class="bg-orange-100 w-full pt-1 pb-1.5 rounded-lg font-serif"><span
+                    class="text-orange-500">“</span>HALL OF FAME<span class="text-orange-500">”</span></h1>
         </div>
         <div class="swiper mySwiper fame rounded-xl">
             <div class="swiper-wrapper fame-wrapper">
@@ -103,50 +285,46 @@
                     <img src="/assets/1.c5f9bafc.png" alt="1">
                     <h1 class="text-xl font-semibold">Eren Jaeger</h1>
                     <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
-                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
-                        mollitia dolores.</p>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-10 sm:px-14">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Facilis labore, ab eum voluptate on recusandae.</p>
                 </div>
                 <div class="swiper-slide fame-slide flex flex-col">
                     <img src="/assets/2.e6e7edf1.png" alt="2">
                     <h1 class="text-xl font-semibold">Violet Evergarden</h1>
                     <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
-                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
-                        mollitia dolores.</p>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-10 sm:px-14">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Facilis labore, ab eum voluptate on recusandae.</p>
                 </div>
                 <div class="swiper-slide fame-slide flex flex-col">
                     <img src="/assets/3.3233e23b.png" alt="3">
                     <h1 class="text-xl font-semibold">Naruto Uzumaki</h1>
                     <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
-                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
-                        mollitia dolores.</p>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-10 sm:px-14">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Facilis labore, ab eum voluptate on recusandae.</p>
                 </div>
                 <div class="swiper-slide fame-slide flex flex-col">
                     <img src="/assets/4.437e54c5.png" alt="4">
                     <h1 class="text-xl font-semibold">Nobara Kugisaki</h1>
                     <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
-                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
-                        mollitia dolores.</p>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-10 sm:px-14">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Facilis labore, ab eum voluptate on recusandae.</p>
                 </div>
                 <div class="swiper-slide fame-slide flex flex-col">
                     <img src="/assets/5.ed3be787.png" alt="5">
                     <h1 class="text-xl font-semibold">Monkey D. Luffy</h1>
                     <h1 class="text-sm font-semibold">Big Company, Software Developer</h1>
-                    <p class="text-xs font-semibold text-blue-900 pt-3 px-5">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Facilis labore, ab eum voluptate recusandae perferendis at dolorem, esse
-                        mollitia dolores.</p>
+                    <p class="text-xs font-semibold text-blue-900 pt-3 px-10 sm:px-14">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Facilis labore, ab eum voluptate on recusandae.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- === LIVE PROGRAMS (SLIDER) === -->
-    <section class=" text-blue-900 mt-20 mb-10">
-        <div class="text-center text-xl font-bold mb-2">
-            <span class="bg-orange-100 pt-1 pb-1.5 px-16 rounded-xl">Live Programs</span>
+    <section class=" text-blue-900  mx-1 md:mx-5 lg:mx-10 mt-20 mb-20">
+        <div class="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
+            <h1 class="bg-orange-100 w-full pt-1 pb-1.5 rounded-lg font-serif"><span
+                    class="text-orange-500">“</span>LIVE PROGRAMS<span class="text-orange-500">”</span></h1>
         </div>
         <div class="swiper mySwiper programs rounded-xl">
             <div class="swiper-wrapper programs-wrapper">
@@ -184,145 +362,71 @@
         </div>
     </section>
 
-    <!-- WHAT YOU WILL LEARN (DROPDOWN) -->
-    <section class=" text-blue-900 mt-16 mb-56 text-center flex flex-col items-center group relative w-fit mx-auto">
-        <div class="text-center text-base font-semibold">
-            <span
-                class="bg-orange-100 border-2 pt-1 pb-1.5 px-5 rounded-xl inline-flex items-center hover:cursor-pointer">What
-                You Will Learn <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor"
-                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-            </span>
-        </div>
-        <div
-            class="absolute hidden group-hover:block top-8 z-50 w-44 bg-white rounded divide-y divide-gray-100 shadow-md dark:bg-gray-700 dark:divide-gray-600">
-            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
-                <li>
-                    <a href="#"
-                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Affordable
-                        Programs</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Community
-                        Programs</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Live
-                        Programs</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">One
-                        Neuron</a>
-                </li>
-            </ul>
-            <div class="py-1">
-                <a href="#"
-                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Test
-                    Series</a>
-            </div>
-        </div>
-    </section>
 
     <!-- === FOOTER SECTION === -->
-    <section class="m-2 sm:m-5 p-7 sm:p-14 bg-orange-100 border-2 rounded-lg border-gray-300 -mt-36">
-        <div class="flex flex-col items-center space-y-5">
-            <div class="w-20 sm:w-12">
-                <img src="/assets/ineuron-logo.c2100016.png">
-            </div>
-            <div class='flex justify-center w-10 sm:w-12'>
-                <img class="hover:cursor-pointer mx-2" src="/assets/facebook.c9d0305d.svg" alt="">
-                <img class="hover:cursor-pointer mx-2" src="/assets/twitter.77267469.svg" alt="">
-                <img class="hover:cursor-pointer mx-2" src="/assets/linkedin.20274ca1.svg" alt="">
-                <img class="hover:cursor-pointer mx-2" src="/assets/youtube.9010ce63.svg" alt="">
-            </div>
-        </div>
-
-        <div class="my-8 border-b border-[#C4C4C4]"></div>
-
-        <div class="flex flex-col space-y-5">
-            <div>
-                <img class="pb-2 w-6 hover:cursor-pointer mx-auto" src="/assets/location.9c83dee2.svg" alt="">
-                <p class="font-semibold text-xs text-gray-500">17th Floor Tower A, Brigade Signature Towers,
-                    Sannatammanahalli, Bengaluru, Karnataka 562129.</p>
-            </div>
-            <div>
-                <img class="pb-2 w-6 hover:cursor-pointer mx-auto" src="/assets/message.fc7b759b.svg" alt="">
-                <p class="font-semibold text-xs text-gray-500">Email Us: contact@ineuron.ai</p>
-            </div>
-        </div>
-
-        <div class="mt-8 border-b border-[#C4C4C4]"></div>
-
-        <div class="my-5 space-y-7">
-            <div>
-                <h3 class='py-1 sm:py-2 text-lg sm:text-xl font-semibold text-blue-900'>Company</h3>
-                <div class="flex items-center space-x-5">
-                    <div>
-                        <p
-                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                            About Us</p>
-                        <p
-                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                            Hackathon</p>
-                        <p
-                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                            Job Guarantee</p>
-                        <p
-                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                            Privacy Policy</p>
-                    </div>
-                    <div>
-                        <p
-                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                            Contact Us</p>
-                        <p
-                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                            FAQs</p>
-                        <p
-                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                            Job Assistance</p>
-                        <p
-                            class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                            Terms & Conditions</p>
-                    </div>
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <img class="w-40" src="/assets/ineuron-logo-orange.297af953.svg" alt="ineuron-logo">
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-
-            <div>
-                <h3 class='py-1 sm:py-2 text-lg sm:text-xl font-semibold text-blue-900'>Company</h3>
-                <div>
-                    <p
-                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                        Job Portal</p>
-                    <p
-                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                        Internship Portal</p>
-                    <p
-                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                        Become an Affiliate</p>
-                    <p
-                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                        Hackathon</p>
-                    <p
-                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                        Job Guarantee</p>
-                    <p
-                        class='py-1 sm:py-2 text-xs sm:text-base font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-900'>
-                        Privacy Policy</p>
-                </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Company</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Get started</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Services</li>
+                    <li><a href="#">App design</a></li>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Logo design</a></li>
+                    <li><a href="#">Banner design</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Account</li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Prefrences</a></li>
+                    <li><a href="#">Purchase</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Courses</li>
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Photoshop</a></li>
+                </ul>
+                <ul class="box input-box">
+                    <li class="link_name">Subscribe</li>
+                    <li><input type="text" placeholder="Enter your email"></li>
+                    <li><input type="button" value="Subscribe"></li>
+                </ul>
             </div>
         </div>
+        <div class="bottom-details flex justify-center py-4 font-serif text-sm">
+            <div class="items-center flex text-gray-300 space-x-3">
+                <svg width="25" height="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                    clip-rule="evenodd" class="fill-current">
+                    <path
+                        d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                    </path>
+                </svg>
+                <p>Copyright © 2022 - All right reserved @Yash Bele</p>
+            </div>
+        </div>
+    </footer>
 
-        <div class="my-8 border-b border-[#C4C4C4]"></div>
-
-        <p class='py-1 text-xs sm:text-base font-semibold text-gray-500'>© 2022 Hackathon Challange.
-            This is a sample project
-            and open source design project free for personal and commercial use.</p>
-    </section>
 
     <!-- === CDN (TAILWIND-SCRIPT) === -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -334,9 +438,17 @@
             slidesPerView: 1,
             loop: true,
             grabCursor: true,
-            // spaceBetween: 30,
+            spaceBetween: 20,
             autoplay: {
                 delay: 3000,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
             },
         });
     </script>
